@@ -26,6 +26,7 @@ android {
 			// By default it compiles all available ABIs.
 			//abiFilters 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
 		}
+		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 		missingDimensionStrategy("parallelization", "standard")
 	}
 	externalNativeBuild {
