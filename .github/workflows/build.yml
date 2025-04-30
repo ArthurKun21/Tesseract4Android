@@ -49,5 +49,5 @@ jobs:
       - name: Upload APK ${{ matrix.module }}
         uses: actions/upload-artifact@v4
         with:
-          name: apk-${{ matrix.module }}
-          path: ${{ matrix.module }}/build/outputs/apk/release/sample-release-unsigned.apk
+          name: apk-${{ matrix.module }}-${{ github.run_number }}
+          path: ${{ matrix.module }}/build/outputs/apk/release/sample-release.apk
