@@ -1,0 +1,33 @@
+[versions]
+annotation = "1.9.1"
+junit = "4.13.2"
+test-runner = "1.6.2"
+test-rules = "1.6.1"
+test-ext-junit = "1.2.1"
+test-expresso-core = "3.6.1"
+
+appcompat = "1.7.0"
+google-material = "1.12.0"
+contraint-layout = "2.2.0"
+lifecycle = "2.8.7"
+
+agp = "8.9.2"
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+google-material = { module = "com.google.android.material:material", version.ref = "google-material" }
+contraint-layout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "contraint-layout" }
+lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata", version.ref = "lifecycle" }
+lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "lifecycle" }
+
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+androidx-test-runner = { module = "androidx.test:runner", version.ref = "test-runner" }
+androidx-test-rules = { module = "androidx.test:rules", version.ref = "test-rules" }
+androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "test-ext-junit" }
+androidx-test-expresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "test-expresso-core" }
+
+junit = { module = "junit:junit", version.ref = "junit" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
