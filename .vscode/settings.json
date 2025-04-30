@@ -6,7 +6,7 @@
     ],
     "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
         {
-            "text": "Use Conventional Commits for the pull request title. The description should provide more details about the changes made in the pull request. Include any relevant information such as the motivation for the changes, how they were implemented, and any potential impact on existing functionality."
+            "file": ".github/copilot/pull_request.md"
         }
     ]
 }
