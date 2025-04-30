@@ -50,10 +50,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: apk-${{ matrix.module }}
-          path: ${{ matrix.module }}/build/outputs/apk/release/app-release.apk
+          path: ${{ matrix.module }}/build/outputs/apk/release/sample-release-unsigned.apk
 
       - name: Upload De-obfuscation mapping file $${{ matrix.module }}
         uses: actions/upload-artifact@v4
         with:
           name: mapping-${{ matrix.module }}
-          path: ${{ matrix.module }}/build/outputs/apk/release/mapping.txt
+          path: ${{ matrix.module }}/build/outputs/apk/release/sample-mapping.txt
