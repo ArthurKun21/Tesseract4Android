@@ -49,5 +49,11 @@ jobs:
       - name: Upload APK ${{ matrix.module }}
         uses: actions/upload-artifact@v4
         with:
-          name: apk-${{ matrix.module }}
+          name: apk-${{ matrix.module }}-${{ github.run_number }}
           path: ${{ matrix.module }}/build/outputs/apk/release/app-release.apk
+
+      - name: Upload De-obfuscation mapping file
+        uses: actions/upload-artifact@v4
+        with:
+          name: mapping-${{ github.run_number }}-${{ github.run_number }}
+          path: ${{ matrix.module }}/build/outputs/mapping/preview/mapping.txt
