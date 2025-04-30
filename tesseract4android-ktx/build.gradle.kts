@@ -5,6 +5,7 @@ import org.gradle.kotlin.dsl.register
 plugins {
 	alias(libs.plugins.android.library)
 	id("maven-publish")
+	alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -63,6 +64,11 @@ dependencies {
 	//noinspection GradleDependency
 	"standardImplementation"(project(":internals"))
 	"openmpImplementation"(project(":internals"))
+
+	implementation(libs.kotlin.stdlib)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android) 
+    testImplementation(libs.kotlinx.coroutines.test)
 
 	implementation(libs.androidx.annotation)
 
