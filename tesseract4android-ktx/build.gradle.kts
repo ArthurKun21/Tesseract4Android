@@ -87,14 +87,14 @@ afterEvaluate {
                 from(components.findByName("standardRelease"))
 
                 groupId = "cz.adaptech"
-                artifactId = "tesseract4android"
+                artifactId = "tesseract4android-ktx"
                 version = rootProject.extra["tesseract4AndroidVersion"] as String
             }
             register<MavenPublication>("openmp") {
                 from(components.findByName("openmpRelease"))
 
                 groupId = "cz.adaptech"
-                artifactId = "tesseract4android-openmp"
+                artifactId = "tesseract4android-ktx-openmp"
                 version = rootProject.extra["tesseract4AndroidVersion"] as String
             }
         }
