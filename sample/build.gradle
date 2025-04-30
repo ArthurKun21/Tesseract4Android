@@ -57,7 +57,7 @@ dependencies {
 
     // To use library compiled locally
     // Which flavor to use is determined by missingDimensionStrategy parameter above.
-    standardReleaseImplementation project(':tesseract4android')
+    standardImplementation project(':tesseract4android')
 
     implementation libs.androidx.appcompat
     implementation libs.google.material
