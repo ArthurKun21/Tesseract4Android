@@ -11,7 +11,6 @@ android {
 		minSdk = 21
 		targetSdk = 35
 
-		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 		externalNativeBuild {
 			cmake {
 				// Specifies which native libraries or executables to build and package.
