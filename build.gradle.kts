@@ -4,6 +4,4 @@ plugins {
 }
 
 
-ext {
-    tesseract4AndroidVersion = '4.8.0'
-}
+val tesseract4AndroidVersion by extra("4.8.0")

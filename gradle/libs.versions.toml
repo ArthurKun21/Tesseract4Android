@@ -13,6 +13,8 @@ lifecycle = "2.8.7"
 
 agp = "8.9.2"
 
+tesseract = "4.8.0"
+
 [libraries]
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 google-material = { module = "com.google.android.material:material", version.ref = "google-material" }
@@ -24,7 +26,9 @@ androidx-annotation = { module = "androidx.annotation:annotation", version.ref =
 androidx-test-runner = { module = "androidx.test:runner", version.ref = "test-runner" }
 androidx-test-rules = { module = "androidx.test:rules", version.ref = "test-rules" }
 androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "test-ext-junit" }
-androidx-test-expresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "test-expresso-core" }
+androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "test-expresso-core" }
+
+tesseract = { module = "cz.adaptech.tesseract4android:tesseract4android", version.ref = "tesseract" }
 
 junit = { module = "junit:junit", version.ref = "junit" }
 
