@@ -35,9 +35,10 @@ android {
 	flavorDimensions = ["parallelization"]
 	productFlavors {
 		standard {
+			dimension "parallelization"
 		}
 		openmp {
-
+			dimension "parallelization"
 		}
 	}
 	publishing {
