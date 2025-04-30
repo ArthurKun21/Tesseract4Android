@@ -29,6 +29,7 @@ android {
 			// By default it compiles all available ABIs.
 			//abiFilters 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
 		}
+		missingDimensionStrategy 'parallelization', 'standard'
 	}
 	externalNativeBuild {
 		cmake {
