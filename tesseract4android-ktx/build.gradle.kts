@@ -61,8 +61,8 @@ dependencies {
 	// to not unnecessarily complicate client projects due to potential duplicate class build errors
 	// caused by https://kotlinlang.org/docs/whatsnew18.html#updated-jvm-compilation-target
 	//noinspection GradleDependency
-	standardImplementation(project(":internals"))
-	openmpImplementation(project(":internals"))
+	"standardImplementation"(project(":internals"))
+	"openmpImplementation"(project(":internals"))
 
 	implementation(libs.androidx.annotation)
 
