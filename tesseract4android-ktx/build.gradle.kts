@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-	namespace = "cz.adaptech.tesseract4android-ktx"
+	namespace = "cz.adaptech.tesseract4android.ktx"
 	compileSdk = 35
 
 	defaultConfig {
