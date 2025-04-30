@@ -31,7 +31,7 @@ dependencyResolutionManagement {
     }
 }
 
-include ':tesseract4android'
-if (!System.env.JITPACK) {
-    include ':sample'
+include(":tesseract4android")
+if (System.getenv("JITPACK").isNullOrBlank()) {
+    include(":sample")
 }
