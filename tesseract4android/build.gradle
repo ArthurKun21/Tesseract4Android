@@ -64,8 +64,7 @@ dependencies {
 	// to not unnecessarily complicate client projects due to potential duplicate class build errors
 	// caused by https://kotlinlang.org/docs/whatsnew18.html#updated-jvm-compilation-target
 	//noinspection GradleDependency
-	standardImplementation project(":standardinternals")
-    openmpImplementation project(":openmpinternals")
+	implementation project(':internals')
 
 	implementation libs.androidx.annotation
 
@@ -77,6 +76,13 @@ dependencies {
 }
 
 afterEvaluate {
+	android.libraryVariants.all { variant ->
+        def flavorName = variant.flavorName
+        if (flavorName) {
+            def childVariant = project(path: ':internals', configuration: "${flavorName}Release")
+            dependencies.add("implementation", childVariant)
+        }
+    }
 	publishing {
 		publications {
 			standard(MavenPublication) {
