@@ -74,4 +74,4 @@ jobs:
 
       - name: Build kotlin Package
         run: |
-          ./gradlew :tesseract4android-ktx:assembleRelease --parallel
+          ./gradlew :tesseract4android-ktx:assembleRelease --parallel --configuration-cache
