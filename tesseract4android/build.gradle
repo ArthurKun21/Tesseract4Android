@@ -6,7 +6,7 @@ plugins {
 android {
 	namespace 'cz.adaptech.tesseract4android'
 	compileSdk 35
-	ndkVersion "27.2.12479018"
+	ndkVersion "28.1.13356709"
 
 	defaultConfig {
 		minSdk 21
@@ -21,7 +21,7 @@ android {
 
 				// Support 16 KB page sizes with NDK r27
 				// This can be removed with NDK r28, which supports it by default.
-				arguments "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON"
+				// arguments "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON"
 			}
 		}
 		ndk {
