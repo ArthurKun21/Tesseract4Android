@@ -51,3 +51,27 @@ jobs:
         with:
           name: apk-${{ matrix.module }}-${{ github.run_number }}
           path: ${{ matrix.module }}/build/outputs/apk/release/sample-release.apk
+  
+  build-kotlin:
+    runs-on: macos-latest
+    env:
+      JAVA_VERSION: 17
+      JAVA_DISTRO: 'temurin'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate Gradle Wrapper
+        uses: gradle/actions/wrapper-validation@v3
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: ${{ env.JAVA_DISTRO }}
+
+      - name: Set up gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Build kotlin Package
+        run: |
+          ./gradlew :tesseract4android-ktx:assembleRelease --parallel
