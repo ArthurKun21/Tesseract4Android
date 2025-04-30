@@ -15,7 +15,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    flavorDimensions = ['parallelization']
     buildTypes {
         release {
             minifyEnabled false
