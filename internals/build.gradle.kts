@@ -9,7 +9,6 @@ android {
 
 	defaultConfig {
 		minSdk = 21
-		targetSdk = 35
 
 		externalNativeBuild {
 			cmake {
@@ -93,4 +92,11 @@ android {
 	buildFeatures {
         buildConfig = true
     }
+	testOptions {
+        targetSdk = 35
+	}
+
+	lint {
+        targetSdk = 35
+	}
 }
