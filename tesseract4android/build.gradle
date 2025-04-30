@@ -96,7 +96,7 @@ dependencies {
 	// to not unnecessarily complicate client projects due to potential duplicate class build errors
 	// caused by https://kotlinlang.org/docs/whatsnew18.html#updated-jvm-compilation-target
 	//noinspection GradleDependency
-	implementation 'androidx.annotation:annotation:1.3.0'
+	implementation 'androidx.annotation:annotation:1.9.1'
 
 	testImplementation 'junit:junit:4.13.2'
 	androidTestImplementation 'androidx.test:runner:1.6.2'
